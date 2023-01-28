@@ -1,0 +1,31 @@
+$def with (datos)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/dis.css" rel="stylesheet" type="text/css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Tablas</h1>
+    <table>
+        <thead>
+            <th style="border: 1px solid black;">No.
+            </th>
+            <th style="border: 1px solid black;">Nombre
+            </th>
+        </thead>
+        <tbody>
+            $for i,x in datos:
+                <tr>
+                    <td style="text-align: center; background-color: salmon; border: 1px solid black;">$i</td>
+                    <td style="text-align: center; background-color: pink; border: 1px solid black;">$x</td>
+                </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
